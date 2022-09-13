@@ -1,0 +1,12 @@
+- job:
+    name: 业务监控数据拉取
+    host: local
+    node_parallel: true
+    # 最新 last 条数据,默认1
+    last: 5
+    tasks:
+      - name: "暂无配置"
+        type: command
+        cmd: echo 0
+        threshold: "0"
+        allow_failed: true
